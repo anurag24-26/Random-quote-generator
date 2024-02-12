@@ -1,10 +1,9 @@
-
 * {
     padding: 0;
     margin: 0;
-  }
+}
+
 body {
-    
     justify-content: center;
     align-items: center;
     height: 1px;
@@ -12,69 +11,75 @@ body {
     padding: 0;
     background-color: #440255; /* Set a background color for better visibility */
 }
-.height{
+
+.height {
     text-align: center;
     font-style: italic;
     font-size: 50px;
+    padding: 10px;
     background-color: rgb(82, 118, 150);
-    border-radius:20px ;
-    text-shadow:1px 2px 2px #0fb3be;
+    border-radius: 20px;
+    text-shadow: 1px 2px 2px #0fb3be;
     transition: all 0.5s;
 }
 
-
-.height:hover{
-    text-align: center;
-    font-style: italic;
+.height:hover {
     font-size: 55px;
-    background-color: rgb(82, 118, 150);
-    border-radius:20px ;
-    text-shadow:1px 5px 5px #1ebe0f ;
-    transition: all 0.5s;
+    text-shadow: 1px 5px 5px #1ebe0f;
 }
 
 .quote-container {
     text-align: center;
-    padding: 50px;
-    margin: 200px;
-    border: 1px solid rgba(226, 18, 3, 0.616); /* Transparent round border */
+    padding: 30px;
+    padding-bottom: 30px;
+    margin: 50px auto; /* Centering the container horizontally */
+    border: 1px solid rgba(226, 18, 3, 0.616);
     border-radius: 10px;
-    text-shadow:1px -2px 4px #000000;
+    text-shadow: 1px -2px 4px #000000;
     background-color: transparent;
-    -webkit-box-shadow: 18px 10px 25px 7px rgba(0,0,0,0.75);
--moz-box-shadow: 18px 10px 25px 7px rgba(0,0,0,0.75);
-box-shadow: 18px 10px 25px 7px rgba(0,0,0,0.75);
+    box-shadow: 18px 10px 25px 7px rgba(0, 0, 0, 0.75);
 }
 
 .quote-text {
     font-size: 30px;
-    font-style: italic;
     color: #05eff7;
 }
 
-
-
 .button-85 {
-    color: #b8e9f5;
     padding: 0.3em 0.6em;
     margin: 16px;
     font-size: 16px;
-    border-radius: 0.8em;
-    background: #4072fc;
-    cursor: pointer;
-    border: 1px solid #000000;
-    transition: all 0.3s;
-    box-shadow: 1px   #c5c5c5, -6px -6px 12px #ffffff;
-}
-.button-85:hover {
-    color: #752727;
-    padding: 0.4em 0.9em;
-    font-size: 17px;
-    border-radius: 0.4em;
-    background: #b4b295;
-    cursor: pointer;
-    border: 1px solid #000000;
-    transition: all 0.5s;
-    box-shadow: 1px 0.1px 0.1px  #c5c5c5,;
 }
 
+.button-85:hover {
+    padding: 0.4em 0.9em;
+    font-size: 17px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 600px) {
+    .height {
+        font-size: 40px;
+    }
+
+    .height:hover {
+        font-size: 45px;
+    }
+
+    .quote-container {
+        padding: 10px;
+        margin: 100px auto; /* Centering the container horizontally */
+    }
+
+    .quote-text {
+        font-size: 20px;
+    }
+
+    .button-85 {
+        font-size: 14px;
+    }
+
+    .button-85:hover {
+        font-size: 15px;
+    }
+}
