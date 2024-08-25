@@ -31,6 +31,7 @@ body {
 .quote-container {
     text-align: center;
     padding: 30px;
+    max-width: fit-content;
     padding-bottom: 30px;
     margin: 50px auto; /* Centering the container horizontally */
     border: 1px solid rgba(226, 18, 3, 0.616);
@@ -49,6 +50,10 @@ body {
     padding: 0.3em 0.6em;
     margin: 16px;
     font-size: 16px;
+    border-radius: 20px;
+    background-color: oldlace;
+    height: 45px;
+    width: 70px;
 }
 
 .button-85:hover {
